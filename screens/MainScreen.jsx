@@ -20,7 +20,10 @@ class MainScreen extends Component {
             screenOptions={{
                 headerShown: false,
             }}>
-            <Tab.Screen name="Map" component={MapScreen} options={{title: 'Map', tabBarIcon: () => (<Icon name="map" />)}} />
+            <Tab.Screen 
+                name="Map" 
+                component={MapScreen} 
+                options={{title: 'Map', tabBarIcon: () => (<Icon name="map" />)}} />
             <Tab.Screen name="Profile" component={RegisterScreen} options={{title: 'Profile', tabBarIcon: () => (<Icon name="user" />)}} />
         </Tab.Navigator>
         );

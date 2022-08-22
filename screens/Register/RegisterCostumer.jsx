@@ -36,6 +36,7 @@ class RegisterCostumer extends Component {
                 <View style={{width: '80%',}} >
                     <Text style={{color: 'black', fontSize: 15, textAlign:'left'}}>Username</Text>
                     <TextInput
+                        placeholderTextColor="black"
                         style={styles.input}
                         placeholder="Type Your Name Here"
                         onChangeText={(username) => this.setState({username})}
@@ -46,6 +47,7 @@ class RegisterCostumer extends Component {
                     <Text style={{color: 'black', fontSize: 15, textAlign:'left'}}>Phone</Text>
                     <TextInput
                         style={styles.input}
+                        placeholderTextColor="black"
                         placeholder="Type Your Phone Number Here"
                         onChangeText={(phone) => this.setState({phone})}
                         value={this.state.phone}
@@ -55,6 +57,7 @@ class RegisterCostumer extends Component {
                 <View style={{width: '80%',}} >
                     <Text style={{color: 'black', fontSize: 15, textAlign:'left'}}>Password</Text>
                     <TextInput
+                        placeholderTextColor="black"
                         style={styles.input}
                         placeholder="Type Your Password Here"
                         onChangeText={(password) => this.setState({password})}

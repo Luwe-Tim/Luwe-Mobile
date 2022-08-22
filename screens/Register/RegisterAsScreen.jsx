@@ -7,16 +7,16 @@ import RegisterCostumer from "./RegisterCostumer";
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#fff',
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
+        backgroundColor: '#FBBC05',
     },
     button: {    
         flexDirection: 'row',
         width: 200,
         height:  50,
-        backgroundColor: '#FBBC05',
+        backgroundColor: '#fff',
         borderRadius: 20,
         marginVertical: 10,
     },
@@ -61,7 +61,7 @@ class RegisterAsScreen extends Component {
                     IconName="user" />
                 <Buttons 
                     title="Register as a Merchant" 
-                    onPress={() => this.props.navigation.dispatch(StackActions.replace('Main'))} 
+                    // onPress={() => this.props.navigation.dispatch(StackActions.replace('Main'))} 
                     IconName="cart-plus" />
                 <TouchableOpacity
                     onPress={() => this.props.navigation.navigate('Login')}>
